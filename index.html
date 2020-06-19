@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fortis Project | Security</title>
+
+  <script src=https://code.jquery.com/jquery-3.5.1.slim.min.js></script>
+  <link media="screen" rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="shortcut icon" type="image/png" href="asset/tfpFavicon.png">
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+  <link rel="shortcut icon" type="image/png" href="asset/favicon3.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<body>
+  <header>
+
+
+    <div class="topCenter">
+      <div class="TCdef">
+        <h1>tactical</h1>
+        <h4 id="adj"><u>adjective</u></h4>
+        <h4>tac·​ti·​cal | \ ˈtak-ti-kəl \</h4>
+        <h2>Relating to small-scale actions serving a larger purpose</h2>
+      </div>
+      <div class="vl"></div>
+      <div class="TCwords">
+        <img class="logo" src="asset/orange.png">
+        <h3>Dynamic Physical Security Consulting</h3>
+        <h4>A Division of Pandion Tactical LLC.</h4>
+        <a href="#about" class="button"><img src="asset/arrow.png"></a>
+
+      </div>
+    </div>
+  </header>
+  <div class="cursor cursor--small"></div>
+  <canvas class="cursor cursor--canvas" resize></canvas>
+  
+  <div id="about">
+    <hr class="top">
+    <div class ="row0">
+      <h2>Security Procedural Planning</h2><h2> | </h2>
+      <h2>Operational Audits</h2><h2> | </h2>
+      <h2>Vulnerability Assessments</h2><h2> | </h2>
+      <h2>Checmical Facility Anti-Terrorism Review</h2>
+    </div>
+    <hr class="bottom">
+
+
+
+
+    <div class="row1">
+      <div class="present">
+        <img src="asset/present.jpg">
+      </div>
+      <div class="quals">
+        <div class="words">
+          <h1>Kevin M. Byrd</h1>
+          <h2>Project Consultant</h2>
+          <br>
+          <h3>Qualifications:</h3>
+          <ul>
+            <li>Top Graduate Award Winner - USAF Security Forces Academy</li>
+            <li>Former USAF Anti-Terrorism Officer</li>
+            <li>Former International Security Contractor Team Leader</li>
+            <li>Former Executive Protection Team Leader</li>
+            <li>Former Class 1 Police Officer, South Carolina</li>
+            <li>Former Lead Tactics Instructor, Military and Law Enforcement</li>
+            <li>Dept. of Homeland Security CVI Certified</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row2">
+      <div id="contact">
+        <div class="form">
+          <section class="get-in-touch">
+            <h1 class="title">How Can We Help You?</h1>
+            <form class="contact-form row" action="https://formspree.io/xaypbjbn" method="POST">
+               <div class="form-field col x-50">
+                  <input id="name" class="input-text js-input" type="text" name="name"required>
+                  <label class="label" for="name">Name</label>
+               </div>
+               <div class="form-field col x-50">
+                  <input id="email" class="input-text js-input" type="email" name="_replyto" required>
+                  <label class="label" for="email">E-mail</label>
+               </div>
+               <div class="form-field col x-100">
+                  <input id="message" class="input-text js-input" type="text" name="message" required>
+                  <label class="label" for="message">Message</label>
+               </div>
+               <div class="form-field col x-100 align-center">
+                  <input class="submit-btn" type="submit" value="Submit">
+               </div>
+            </form>
+         </section>
+
+
+
+
+
+
+      </div>
+      </div>
+      <div class="picture">
+        <img src="asset/police.jpg">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--<footer>
+    <span>&copy;2020 by Pandion Tactical LLC. | "The Fortis Project" and logo are trademarks of Pandion Tactical
+      LLC.</span>
+  </footer>-->
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    $(function () {
+      $(window).on('resize', function resize() {
+        $(window).off('resize', resize);
+        setTimeout(function () {
+          var content = $('.topCenter');
+          var top = (window.innerHeight - content.height()) / 2;
+          content.css('top', Math.max(0, top) + 'px');
+          $(window).on('resize', resize);
+        }, 50);
+      }).resize();
+    });
+
+
+    $( '.js-input' ).keyup(function() {
+  if( $(this).val() ) {
+     $(this).addClass('not-empty');
+  } else {
+     $(this).removeClass('not-empty');
+  }
+});
+  </script>
+
+</body>
+
+</html>

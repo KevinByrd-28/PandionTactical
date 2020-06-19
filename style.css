@@ -1,0 +1,480 @@
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background:  #b23b3b;
+}
+html,body{
+  position:relative;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+header {
+  padding:2em;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
+  width: 100vw;
+}
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background-image: url(asset/metalBackground2.jpg);
+  background-size: cover;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+header * {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+header p {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+main {
+  background-color: hsl(60, 10%, 10%);
+  line-height: 1.7;
+  max-width: 32em;
+  padding: 5% calc(50% - 16em) 35%;
+  position: relative;
+  z-index: 2;
+}
+
+html {
+  background-color: whitesmoke;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  color: whitesmoke;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.entire {
+  height: 100%;
+  width: 100%;
+}
+header {
+  text-align: left;
+  padding-left: 2em;
+}
+header h1 {
+  font-size: 24px;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+.topCenter {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+
+}
+.TCdef {
+  padding: 2em;
+  width: 350px;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+.TCdef h1{
+  font-size: 225%;
+}
+.TCwords {
+  text-align: center;
+  margin-top:3.5em;
+  padding: 2em;
+  width: 425px;
+}
+.TCwords h3 {
+  text-align: center;
+  margin-top: -1em;
+  height: auto;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  letter-spacing: 2px;
+  margin-bottom:-1.5em;
+}
+.TCwords h4{
+margin-bottom:2em;
+}
+.TCwords .logo {
+  width: 400px;
+  height: auto;
+}
+.vl {
+  border-left: 6px solid whitesmoke;
+  border-radius: 10px;
+  height: 300px;
+}
+#adj {
+  margin-bottom: -2em;
+}
+.motion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:rgb(255, 153, 0);
+}
+.motion h2 {
+  padding: 1.5em;
+}
+.service1 {
+  animation: backIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.button img{
+  width:50px;
+  margin-top: -2em;
+}
+
+.button img:hover {
+	transform: scale(1.1);
+}
+.smoothScroll{
+  color:black;
+  scroll-behavior: smooth;
+}
+a{
+  scroll-behavior: smooth;
+}
+#about{
+  position:absolute;
+  height:100%;
+  margin-top:100%;
+  color:black;
+}
+.top{
+  background-color: rgb(248, 118, 11);
+  height: 5px;
+  border-radius: 2.5px;
+  width:50%;
+  border: none;
+
+}
+.bottom{
+  background-color: rgb(248, 118, 11);
+  height: 5px;
+  border-radius: 2.5px;
+  width:70%;
+  border: none;
+  margin-bottom: 3em;
+}
+.row0{
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height:10em;
+  height:auto;
+  max-height:30em;
+  text-align: center;
+  font-size: 1vw;
+}
+.row1{
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content: stretch;
+  height:auto;
+  max-height:30em;
+}
+.present{
+  width:55%;
+}
+.present img{
+  width:100%;
+  height:auto;
+  max-height: 45em;
+}
+.quals{
+  width:45%;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.words{
+  height:auto;
+  max-height: 45em;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size:1.1vw;
+  padding:1em;
+}
+ul{
+  list-style-type: none;
+}
+.row2{
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content: right;
+  height:auto;
+
+}
+#contact{
+  position:fixed;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  width:55%;
+  text-align: center;
+}
+.form{
+  margin-bottom: -100vh;
+  position: absolute;
+  top:105%;
+  bottom:0;
+}
+.picture{
+  position:fixed;
+  right:0;
+  width:45%;
+}
+.picture img{
+  width:100%;
+  height:auto;
+  right:0;
+
+}
+footer {
+
+  position: relative;
+  margin-top:200%;
+  bottom:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 1.5em 2.0em;
+  box-shadow: 0px 0 10px -3px rgba(0,0,0,0.75);
+  overflow: hidden;
+
+  
+  
+}
+
+.footer img{
+  position:relative;
+  background: none;
+  border:hidden;
+  width: 25px;
+  height:auto;
+  object-fit: contain;
+}
+.footer button:focus{
+  background: none;
+  border:hidden;
+  outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.align-center {
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  position: relative;
+}
+.row {
+  margin: -20px 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.row .col.x-50 {
+  width: 50%;
+}
+.row .col.x-100 {
+  width: 100%;
+}
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  bottom:0;
+  transform: translateY(-50%);
+}
+.get-in-touch .title {
+  text-align: center;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3vw;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+  
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: whitesmoke;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(255, 137, 2);
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: whitesmoke;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+.note .link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 950px){
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .topCenter{
+    margin-left: -2em;
+  }
+  .TCdef{
+    display: none;
+  }
+  .vl{
+    display: none;
+  }
+  .form{
+  display: none;
+  }
+  .row0{
+    display: none;
+  }
+  .row1{
+  display: none;
+  }
+  .row2{
+  display: none;
+  }
+  .button{
+    display:none;
+  }
+}
