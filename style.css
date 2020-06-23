@@ -250,10 +250,9 @@ ul {
   text-align: center;
 }
 .form {
-  margin-bottom: -100vh;
-  position: absolute;
+
+  position: relative;
   top: 105%;
-  bottom: 0;
 }
 .picture {
   right: 0;
