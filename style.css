@@ -1,20 +1,21 @@
 ::-webkit-scrollbar {
-  width: 0px;  
+  width: 0px;
   background: transparent;
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background:  #b23b3b;
+  background: #b23b3b;
 }
-html,body{
-  position:relative;
-    margin:0;
-    padding:0;
-    overflow:auto;
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
 header {
-  padding:2em;
+  padding: 2em;
   box-sizing: border-box;
   position: relative;
   -webkit-transform-style: inherit;
@@ -96,27 +97,24 @@ header h1 {
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 .topCenter {
-
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
-
 }
 .TCdef {
   padding: 2em;
   width: 350px;
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
-.TCdef h1{
+.TCdef h1 {
   font-size: 225%;
 }
 .TCwords {
   text-align: center;
-  margin-top:3.5em;
+  margin-top: 3.5em;
   padding: 2em;
   width: 425px;
 }
@@ -126,10 +124,10 @@ header h1 {
   height: auto;
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   letter-spacing: 2px;
-  margin-bottom:-1.5em;
+  margin-bottom: -1.5em;
 }
-.TCwords h4{
-margin-bottom:2em;
+.TCwords h4 {
+  margin-bottom: 2em;
 }
 .TCwords .logo {
   width: 400px;
@@ -148,7 +146,7 @@ margin-bottom:2em;
   display: flex;
   justify-content: center;
   text-align: center;
-  color:rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 .motion h2 {
   padding: 1.5em;
@@ -157,174 +155,145 @@ margin-bottom:2em;
   animation: backIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
-.button img{
-  width:50px;
+.button img {
+  width: 50px;
   margin-top: -2em;
 }
 
 .button img:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
-.smoothScroll{
-  color:black;
+.smoothScroll {
+  color: black;
   scroll-behavior: smooth;
 }
-a{
+a {
   scroll-behavior: smooth;
 }
-#about{
-  position:absolute;
-  height:100%;
-  margin-top:100%;
-  color:black;
+#about {
+  position: absolute;
+  height: 100%;
+  margin-top: 100%;
+  color: black;
 }
-.top{
+.top {
   background-color: rgb(248, 118, 11);
   height: 5px;
   border-radius: 2.5px;
-  width:50%;
+  width: 50%;
   border: none;
-
 }
-.bottom{
+.bottom {
   background-color: rgb(248, 118, 11);
   height: 5px;
   border-radius: 2.5px;
-  width:70%;
+  width: 70%;
   border: none;
   margin-bottom: 3em;
 }
-.row0{
-  top:0;
-  width:100%;
-  display:flex;
+.row0 {
+  top: 0;
+  width: 100%;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  min-height:10em;
-  height:auto;
-  max-height:30em;
+  min-height: 10em;
+  height: auto;
+  max-height: 30em;
   text-align: center;
   font-size: 1vw;
 }
-.row1{
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content: stretch;
-  height:auto;
-  max-height:30em;
+.row1 {
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
 }
-.present{
-  width:55%;
+.present {
+  width: 55%;
 }
-.present img{
-  width:100%;
-  height:auto;
+.present img {
+  width: 100%;
+  height: auto;
   max-height: 45em;
 }
-.quals{
-  width:45%;
-  text-align:center;
-  display:flex;
+.quals {
+  width: 45%;
+  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.words{
-  height:auto;
+.words {
+  height: auto;
   max-height: 45em;
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  font-size:1.1vw;
-  padding:1em;
+  font-size: 1.1vw;
+  padding: 1em;
 }
-ul{
+ul {
   list-style-type: none;
 }
-.row2{
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content: right;
-  height:auto;
-
+.row2 {
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  height: auto;
 }
-#contact{
-  position:fixed;
-  display:flex;
+#contact {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
-  width:55%;
+  width: 55%;
   text-align: center;
 }
-.form{
+.form {
   margin-bottom: -100vh;
   position: absolute;
-  top:105%;
-  bottom:0;
+  top: 105%;
+  bottom: 0;
 }
-.picture{
-  position:fixed;
-  right:0;
-  width:45%;
+.picture {
+  right: 0;
+  width: 45%;
 }
-.picture img{
-  width:100%;
-  height:auto;
-  right:0;
-
+.picture img {
+  width: 100%;
+  height: auto;
+  right: 0;
 }
 footer {
-
   position: relative;
-  margin-top:200%;
-  bottom:0;
-  display:flex;
+  margin-top: 200%;
+  bottom: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   height: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: black;
   text-align: center;
-  padding: 1.5em 2.0em;
-  box-shadow: 0px 0 10px -3px rgba(0,0,0,0.75);
+  padding: 1.5em 2em;
+  box-shadow: 0px 0 10px -3px rgba(0, 0, 0, 0.75);
   overflow: hidden;
-
-  
-  
 }
 
-.footer img{
-  position:relative;
+.footer img {
+  position: relative;
   background: none;
-  border:hidden;
+  border: hidden;
   width: 25px;
-  height:auto;
+  height: auto;
   object-fit: contain;
 }
-.footer button:focus{
+.footer button:focus {
   background: none;
-  border:hidden;
+  border: hidden;
   outline: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .align-center {
   text-align: center;
@@ -364,8 +333,7 @@ body {
   margin: 0 auto;
   position: relative;
   top: 50%;
-  bottom:0;
-  transform: translateY(-50%);
+  bottom: 0;
 }
 .get-in-touch .title {
   text-align: center;
@@ -379,7 +347,6 @@ body {
 .contact-form .form-field {
   position: relative;
   margin: 32px 0;
-  
 }
 .contact-form .input-text {
   display: block;
@@ -396,7 +363,8 @@ body {
 .contact-form .input-text:focus {
   outline: none;
 }
-.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
   transform: translateY(-24px);
 }
 .contact-form .label {
@@ -442,39 +410,32 @@ body {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 950px){
-  body{
+@media only screen and (max-width: 950px) {
+  body {
     overflow-y: hidden;
     overflow-x: hidden;
   }
-  .topCenter{
+  .topCenter {
   }
-  .TCdef{
+  .TCdef {
     display: none;
   }
-  .vl{
+  .vl {
     display: none;
   }
-  .form{
-  display: none;
-  }
-  .row0{
+  .form {
     display: none;
   }
-  .row1{
-  display: none;
+  .row0 {
+    display: none;
   }
-  .row2{
-  display: none;
+  .row1 {
+    display: none;
   }
-  .button{
-    display:none;
+  .row2 {
+    display: none;
+  }
+  .button {
+    display: none;
   }
 }
