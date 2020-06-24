@@ -11,17 +11,17 @@
 
   <link rel="shortcut icon" type="image/png" href="asset/tfpFavicon.png">
   <link rel="icon" type="image/png" href="asset/favicon.ico" sizes="16x16">
-<link rel="icon" type="image/png" href="asset/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="asset/favicon.ico" sizes="96x96">
+  <link rel="icon" type="image/png" href="asset/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="asset/favicon.ico" sizes="96x96">
 
-<link rel="apple-touch-icon" sizes="57x57" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="114x114" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="72x72" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="144x144" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="60x60" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="120x120" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="76x76" href="asset/favicon.ico">
-<link rel="apple-touch-icon" sizes="152x152" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="60x60" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="120x120" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="asset/favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="asset/favicon.ico">
 
   <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
@@ -42,8 +42,13 @@
       <div class="vl"></div>
       <div class="TCwords">
         <img class="logo" src="asset/PTLogo.png">
-        <h3>Dynamic Physical Security Consulting</h3>
-        <h4>The Fortis Project &#174, Pandion Properties, Mustard Racing &#8482</h4>
+        <div class="business">
+          <h3>Pandion Tactical Training</h3>
+          <h3>The Fortis Project&#174 Security Consulting</h3>
+          <h3>Pandion Properties</h3>
+          <h3>Mustard Racing Designs&#8482</h3>
+          <br>
+        </div>
         <a href="#about" class="button"><img src="asset/arrow.png"></a>
 
       </div>
@@ -51,77 +56,34 @@
   </header>
   <div class="cursor cursor--small"></div>
   <canvas class="cursor cursor--canvas" resize></canvas>
-  
+
   <div id="about">
-    <hr class="top">
-    <div class ="row0">
-      <h2>Security Procedural Planning</h2><h2> | </h2>
-      <h2>Operational Audits</h2><h2> | </h2>
-      <h2>Vulnerability Assessments</h2><h2> | </h2>
-      <h2>Chemical Facility Anti-Terrorism Review</h2>
-    </div>
-    <hr class="bottom">
-
-
-
-
-    <div class="row1">
-      <div class="present">
-        <img src="asset/present.jpg">
-      </div>
-      <div class="quals">
-        <div class="words">
-          <h1>Kevin M. Byrd</h1>
-          <h2>Project Consultant</h2>
-          <br>
-          <h3>Qualifications:</h3>
-          <ul>
-            <li>Top Graduate Award Winner - USAF Security Forces Academy</li>
-            <li>Former USAF Anti-Terrorism Officer</li>
-            <li>Former International Security Contractor Team Leader</li>
-            <li>Former Executive Protection Team Leader</li>
-            <li>Former Class 1 Police Officer, South Carolina</li>
-            <li>Former Lead Tactics Instructor, Military and Law Enforcement</li>
-            <li>Dept. of Homeland Security CVI Certified</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row2">
+   
       <div id="contact">
         <div class="form">
           <section class="get-in-touch">
             <h1 class="title">How Can We Help You?</h1>
             <form class="contact-form row" action="https://formspree.io/xaypbjbn" method="POST">
-               <div class="form-field col x-50">
-                  <input id="name" class="input-text js-input" type="text" name="name"required>
-                  <label class="label" for="name">Name</label>
-               </div>
-               <div class="form-field col x-50">
-                  <input id="email" class="input-text js-input" type="email" name="_replyto" required>
-                  <label class="label" for="email">E-mail</label>
-               </div>
-               <div class="form-field col x-100">
-                  <input id="message" class="input-text js-input" type="text" name="message" required>
-                  <label class="label" for="message">Message</label>
-               </div>
-               <div class="form-field col x-100 align-center">
-                  <input class="submit-btn" type="submit" value="Submit">
-               </div>
+              <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" name="name" required>
+                <label class="label" for="name">Name</label>
+              </div>
+              <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" name="_replyto" required>
+                <label class="label" for="email">E-mail</label>
+              </div>
+              <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" name="message" required>
+                <label class="label" for="message">Message</label>
+              </div>
+              <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Submit">
+              </div>
             </form>
-         </section>
-
-
-
-
-
-
+          </section>
+        </div>
       </div>
-      </div>
-      <div class="picture">
-        <img src="asset/barbed.jpg">
-      </div>
-    </div>
+     
   </div>
 
 
@@ -176,13 +138,13 @@
     });
 
 
-    $( '.js-input' ).keyup(function() {
-  if( $(this).val() ) {
-     $(this).addClass('not-empty');
-  } else {
-     $(this).removeClass('not-empty');
-  }
-});
+    $('.js-input').keyup(function () {
+      if ($(this).val()) {
+        $(this).addClass('not-empty');
+      } else {
+        $(this).removeClass('not-empty');
+      }
+    });
   </script>
 
 </body>
