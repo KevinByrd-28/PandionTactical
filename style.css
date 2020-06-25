@@ -102,6 +102,9 @@ header h1 {
   margin-left:2em;
   height: auto;
 }
+.logo1{
+  display:none;
+}
 .topCenter {
   position: absolute;
   width: 100%;
@@ -508,6 +511,19 @@ body {
   body {
     overflow-x: hidden;
   }
+  .logo{
+    display:none;
+  }
+  .logo1 {
+    display:inline;
+    position:relative;
+    width: 275px;
+    height: auto;
+  }
+  .button img {
+    width: 30px;
+  
+  }
   #about {
     position: relative;
     height: 100%;
@@ -517,7 +533,8 @@ body {
     margin-top: 120%;
     color: black;
   }
-  .topCenter {
+  .TCwords {
+    display:none;
   }
   .TCdef {
     display: none;
