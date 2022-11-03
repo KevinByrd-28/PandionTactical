@@ -188,28 +188,6 @@ header h1 {
 a {
   scroll-behavior: smooth;
 }
-#about {
-  position: relative;
-  height: 100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100%;
-  color: black;
-}
-#contact {
-  position:relative;
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: center;
-}
-.form {
-  position: relative;
-  width:100%;
-  top: 105%;
-}
 .picture {
   right: 0;
   width: 45%;
@@ -257,7 +235,7 @@ html {
   height: 100%;
 }
 body {
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 .row {
