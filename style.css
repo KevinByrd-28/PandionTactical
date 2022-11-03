@@ -21,7 +21,6 @@ header {
   -webkit-transform-style: inherit;
   transform-style: inherit;
   width: 100vw;
-  height: 100vh;
 }
 header,
 header:before {
@@ -81,8 +80,9 @@ body {
   perspective: 1px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 .entire {
@@ -112,6 +112,7 @@ header h1 {
 }
 .center{
   display: flex;
+  margin-top: -2em;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -188,6 +189,28 @@ header h1 {
 a {
   scroll-behavior: smooth;
 }
+#about {
+  position: relative;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100%;
+  color: black;
+}
+#contact {
+  position:relative;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.form {
+  position: relative;
+  width:100%;
+  top: 105%;
+}
 .picture {
   right: 0;
   width: 45%;
@@ -231,9 +254,11 @@ footer {
 .align-center {
   text-align: center;
 }
-
+html {
+  height: 100%;
+}
 body {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 .row {
