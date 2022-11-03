@@ -231,9 +231,7 @@ footer {
 .align-center {
   text-align: center;
 }
-html {
-  height: 100%;
-}
+
 body {
   height: 100vh;
   position: relative;
