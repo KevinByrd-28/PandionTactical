@@ -34,7 +34,7 @@ header::before {
   right: 0;
   top: 0;
   display: block;
-  background-image: url(asset/background2.jpg);
+  background-image: url(asset/background_new.jpg);
   background-size: cover;
   -webkit-transform-origin: center center 0;
   -webkit-transform: translateZ(-1px) scale(2);
