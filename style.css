@@ -34,7 +34,7 @@ header::before {
   right: 0;
   top: 0;
   display: block;
-  background-image: url(asset/metalBackground2.jpg);
+  background-image: url(asset/background2.jpg);
   background-size: cover;
   -webkit-transform-origin: center center 0;
   -webkit-transform: translateZ(-1px) scale(2);
@@ -219,36 +219,6 @@ a {
   width: 100%;
   height: auto;
   right: 0;
-}
-footer {
-  position: relative;
-  margin-top: 200%;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 25px;
-  font-family: "Raleway", sans-serif;
-  color: black;
-  text-align: center;
-  padding: 1.5em 2em;
-  box-shadow: 0px 0 10px -3px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-}
-
-.footer img {
-  position: relative;
-  background: none;
-  border: hidden;
-  width: 25px;
-  height: auto;
-  object-fit: contain;
-}
-.footer button:focus {
-  background: none;
-  border: hidden;
-  outline: 0;
 }
 
 .align-center {
