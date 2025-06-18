@@ -417,7 +417,7 @@ footer p{
   
   }
   .container{
-    margin-top: 2em;
+    margin: 2em !important;
   }
   #about {
     position: relative;
@@ -448,12 +448,17 @@ footer p{
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 0;
+    width: 100%;
   }
   #contact{
     margin-top: 0;
   }
   .listing p{
     margin-top: -.5em;
+    font-size: 18px;
+  }
+  .information{
+    font-size: 18px;
   }
   .listing p:last-child{
     margin-bottom: 1.5em;
