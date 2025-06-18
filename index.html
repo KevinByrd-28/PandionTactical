@@ -3,18 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Pandion Tactical Consulting</title>
-    <meta name="description" content="Advanced Training, Security Services and Procurement • Greenville SC">
-    <meta property="og:title" content="Pandion Tactical Consulting">
-    <meta property="og:description" content="Advanced Training, Security Services and Procurement • Greenville SC">
-    <meta property="og:url" content="https://www.pandiontactical.com/">
-    <meta property="og:site_name" content="Pandion Tactical Consulting">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Pandion Tactical Consulting</title>
+  <meta name="description" content="Advanced Training, Security Services and Procurement • Greenville SC">
+  <meta property="og:title" content="Pandion Tactical Consulting">
+  <meta property="og:description" content="Advanced Training, Security Services and Procurement • Greenville SC">
+  <meta property="og:url" content="https://www.pandiontactical.com/">
+  <meta property="og:site_name" content="Pandion Tactical Consulting">
 
   <script src=https://code.jquery.com/jquery-3.5.1.slim.min.js></script>
   <link media="screen" rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <script type='text/javascript' src='/smoothScroll.js'></script>
+  <script type='text/javascript'
+    src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+  <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
   <link rel="shortcut icon" type="image/png" href="asset/tfpFavicon.png">
   <link rel="icon" type="image/png" href="asset/favicon.ico" sizes="16x16">
@@ -34,7 +40,11 @@
 <body>
   <header>
     <img class="logo" src="asset/PTLogoWhite.png">
-
+    <div class="menu">
+      <a href="#services">services</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </div>
     <div class="topCenter">
       <img class="logo1" src="asset/PTLogoWhite.png">
       <div class="center">
@@ -43,19 +53,82 @@
           <h2>roman genus of <i>osprey</i></h2>
           <h2>Fish-eating bird of prey, the only genus of family Pandionidae </h2>
         </div>
-      <div class="vl"></div>
-      <div class="TCdef">
-        <h1>tactical</h1>
-        <h4 id="adj"><u>adjective</u></h4>
-        <h4>tac·​ti·​cal | \ ˈtak-ti-kəl \</h4>
-        <h2>Relating to small-scale actions serving a larger purpose</h2>
+        <div class="vl"></div>
+        <div class="TCdef">
+          <h1>tactical</h1>
+          <h4 id="adj"><u>adjective</u></h4>
+          <h4>tac·​ti·​cal | \ ˈtak-ti-kəl \</h4>
+          <h2>Relating to small-scale actions serving a larger purpose</h2>
+        </div>
       </div>
-    </div>
-    <div class="button"></div>
+      <div class="button"></div>
     </div>
 
   </header>
-
+  <div class="container">
+    <div id="services">
+      <div class="information left">
+        <i><p class="info-header">small-scale actions</p></i>
+        <div class="listing">
+          <p>Vulnerability Assessments</p>
+            <p>Program Development</p>
+            <p>Corporate Travel</p>
+            <p>Counter Surveillance Training Course</p>
+            <p>Team Surveillance Ops Training Course</p>     
+        </div>
+      </div>
+      <div class="service-img right">
+        <img src="asset/afghan.png">
+      </div>
+    </div>
+    <div id="about">
+      <div class="about-img left">
+        <img src="asset/present.jpg">
+      </div>
+      <div class="information right">
+        <i><p class="info-header">serving a larger purpose</p></i>
+        <p>
+          KB is a former Anti-Terrorism Officer in the United States Airforce, top of his class at the USAF Security
+          Forces Academy,
+          former Sheriffs Deputy in Spartanburg County South Carolina,
+          and International Team Leader conducting missions on behalf of the Department of Defense.
+          Missions included Reconnaissance, Surveillance and Executive Protection.
+        </p>
+        <p>
+          KB is also a qualified small-arms weapons expert and a certified instructor. He spent over a decade operationally
+          perfecting his tradecraft
+          in Surveillance, Counter-Surveillance (tracking hostile intel surveillance teams), and Assessment reporting.
+        </p>
+      </div>
+      
+    </div>
+    <div id="contact">
+      <div class="form left">
+        <p class="info-header">contact to schedule an appointment</p>
+        <form class="contact-form row" action="https://formspree.io/xaypbjbn" method="POST">
+          <div class="form-field col x-50">
+            <input id="name" placeholder="Name" class="input-text js-input" type="text" name="name" required>
+          </div>
+          <div class="form-field col x-50">
+            <input id="email" placeholder="E-Mail" class="input-text js-input" type="email" name="_replyto" required>
+          </div>
+          <div class="form-field col x-100">
+            <input id="message" placeholder="Message" class="input-text js-input" type="text" name="message" required>
+          </div>
+          <div class="form-field col x-100">
+            <input class="submit-btn" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <div class="picture">
+        <img src="asset/blurred.png">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script>, Kevin Byrd LLC. dba Pandion Tactical Consulting</p>
+    <p>All Rights Reserved</p>
+  </footer>
   <script>
 
     $(document).ready(function () {
