@@ -207,6 +207,7 @@ a {
   position: relative;
   height: 100%;
   margin-top: 10%;
+  padding-top: 1em;
   display:flex;
   flex-direction: row;
   align-content: stretch;
@@ -218,6 +219,7 @@ a {
 #services {
   position: relative;
   height: 100%;
+  padding-top: 1em;
   display:flex;
   flex-direction: row;
   align-items: top;
@@ -254,6 +256,7 @@ a {
   position: relative;
   height: 100%;
   margin-top: 10%;
+  padding-top: 1em;
   display:flex;
   flex-direction: row;
   align-items: top;
@@ -438,6 +441,7 @@ footer p{
   #services, #contact, #about {
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 0;
   }
   #contact{
     margin-top: 0;
