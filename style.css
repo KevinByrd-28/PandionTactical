@@ -378,15 +378,15 @@ footer p{
 
 @media only screen and (max-width: 950px) {
   header{
-    height: 100vh;
+    padding: 0;
   }
   header::before {
     bottom: 0;
     content: "";
     left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: block;
     background-image: url(asset/background_new.jpg);
     background-size: cover;
@@ -396,6 +396,9 @@ footer p{
     transform: none;
     z-index: -1;
     min-height: 100vh;
+  }
+  .topCenter{
+    top: 40vh;
   }
   body {
     overflow-x: hidden;
@@ -414,7 +417,7 @@ footer p{
   
   }
   .container{
-    margin-top: 140%;
+    margin-top: 2em;
   }
   #about {
     position: relative;
